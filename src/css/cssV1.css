@@ -149,6 +149,13 @@ img {
     margin: auto;
 }
 
+video {
+    display: block;
+    margin:  25px auto;
+    width: 500px;
+    height: auto;
+}
+
 @media all and (min-width: 38rem)  /* 608px */
 {
 
@@ -189,6 +196,10 @@ img {
         text-align: left;
     }
 
+    video {
+        width: 608px;
+    }
+
 }
 
 @media all and (min-width: 48rem) /* 768px */
@@ -224,25 +235,8 @@ img {
         padding-bottom: 1rem;
     }
 
-    /* --------------------------form--------------------------- */
-
-    form {
-        max-width: 35rem;
-        margin-left: 5rem;
-    }
-
-
-    input[type=text],
-    input[type=tel],
-    input[type=email],
-    textarea {
-        width: 100%;
-    }
-
-    input[type=submit] {
-        width: 50%;
-        height: 3rem;
-        margin-top: 1.25rem;
+    video {
+        width: 768px;
     }
 
 }
@@ -267,10 +261,17 @@ img {
         margin: 3.1rem;
     }
 
+    video {
+        width: 960px;
+    }
+
 }
 
 @media all and (min-width: 76.5rem) /* 1150px */ {
 
 
+    video {
+        width: 1150px;
+    }
 
 }

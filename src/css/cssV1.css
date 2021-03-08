@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+html {
+    font-family:"Gill Sans", verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 140%;
+    line-height: 1.8;
+    color: #FFFFFF;
+    padding: 0.625rem;
+    text-align: center;
+    background-color: #FF3333;
+    margin: 0;
+}
+
+h2 {
+    font-size: 140%;
+    line-height: 1.5;
+}
+
+h3 {
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+p {
+    margin: 0.625rem 0;
+    line-height: 1.2;
+}
+
+h2, p {
+    color: #000000;
+}
+
+ /* -------------------------nav----------------------------*/
+
+nav ul {
+    display: block;
+    background-color: orange;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    text-decoration: none;
+}
+
+header nav a {
+    color: #000000;
+}
+
+nav li a:hover {
+    background-color: #FF3333;
+    color: #FFFFFF;
+}
+
+nav li a.active {
+    background-color: #FF3333;
+    color: #FFFFFF;
+}
+
+/*------------------------header---------------------------*/
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*---------------------------footer------------------------*/
+
+footer {
+    background-color: #FF3333;
+    padding: 1.25rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: relative;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+body {
+    background-color: #FFFFFF;
+    background-position: center;
+    background-size: cover;
+}
+
+footer>p {
+    color: #FFFFFF;
+    text-align: left;
+}
+
+aside ul li {
+    color: #555555;
+    background-color: #FFFFFF;
+    padding: 1.25rem;
+    margin-bottom: 0.625rem;
+    border: 0.3rem solid #555555;
+    border-radius: 1.25rem;
+    text-align: center;
+}
+
+
+article section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3rem solid #555555;
+    border-radius: 1.6rem;
+    margin-bottom: 0.7rem;
+}
+
+article {
+    background-color: #FFFFFF;
+    text-align: justify;
+    padding: 1rem 0 1rem 0;
+}
+
+section {
+    margin-top: 0.5rem;
+}
+
+embed {
+    width: 595pt;
+    height: 842pt;
+    display: block;
+    margin: auto;
+}
+
+img {
+    width: 595pt;
+    height: 842pt;
+    display: block;
+    margin: auto;
+}
+
+@media all and (min-width: 38rem)  /* 608px */
+{
+
+    h1 {
+        padding: 1.9rem;
+        text-align: left;
+    }
+
+    section h2 {
+        margin-left: 1.25rem;
+    }
+
+    article section img{
+        margin-left: 1rem;
+        margin-right: auto;
+    }
+
+    article section p {
+        display: grid;
+        grid-template-columns: 19rem 1fr;
+        grid-template-rows: auto;
+        margin-right: 1rem;
+    }
+
+    article {
+        border: 0.3rem solid #555555;
+        border-radius: 1.25rem;
+        margin: 1.25rem 0.625rem;
+        padding: 1rem;
+    }
+
+    aside ul li {
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+    }
+
+    footer address p {
+        text-align: left;
+    }
+
+}
+
+@media all and (min-width: 48rem) /* 768px */
+{
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    aside ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    aside ul li {
+        padding: 1.9rem;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.625rem;
+    }
+    article {
+        margin-bottom: 1.25rem;
+    }
+
+    nav ul li {
+        width: 20%;
+    }
+
+    aside h2 {
+        font-size: 200%;
+        padding-bottom: 1rem;
+    }
+
+    /* --------------------------form--------------------------- */
+
+    form {
+        max-width: 35rem;
+        margin-left: 5rem;
+    }
+
+
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    textarea {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        height: 3rem;
+        margin-top: 1.25rem;
+    }
+
+}
+
+@media all and (min-width: 60rem) /* 960px */ {
+
+    aside ul li {
+        padding: 2.5rem;
+        margin-left: 3.1rem;
+        margin-right: 3.1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    aside ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    article {
+        padding: 1rem;
+        margin: 3.1rem;
+    }
+
+}
+
+@media all and (min-width: 76.5rem) /* 1150px */ {
+
+
+
+}

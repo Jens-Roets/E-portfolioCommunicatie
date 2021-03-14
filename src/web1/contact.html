@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - EDJ Coaching</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/v01mobile.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <h1>EDJ Coaching</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="diensten.html">Diensten</a></li>
+            <li><a href="succes.html">Succesverhalen</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="contact">
+
+    <form>
+        <fieldset>
+            <label for="lastName">Achternaam *</label>
+            <input type="text" id="lastName" placeholder="Achternaam" required>
+
+            <label for="firstName">Voornaam *</label>
+            <input type="text" id="firstName" placeholder="Voornaam" required>
+
+            <label for="age">Leeftijd *</label>
+            <input type="number" id="age" placeholder="Leeftijd tussen 18 en 99 jaar" min="18" max="99" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label for="gsm">Gsm-nummer *</label>
+            <input type="tel" id="gsm" placeholder="xxxx xx xx xx" pattern="\d{4} \d{2} \d{2} \d{2}" required>
+
+            <label for="textarea">Opmerking</label>
+            <textarea id="textarea" placeholder="Typ hier uw opmerking." cols="60" rows="10"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Verzenden">
+
+    </form>
+
+</main>
+
+<footer>
+    <address>
+        <p><a href="mailto:evertdejaeghere@hotmail.com">evertdejaeghere@hotmail.com</a></p>
+    </address>
+</footer>
+
+</body>
+
+</html>

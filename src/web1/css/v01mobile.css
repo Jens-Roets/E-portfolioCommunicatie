@@ -6,17 +6,15 @@ html {
 
 html, body {
     height: 100%;
-    margin: 0;
 }
 
 h1 {
     font-size: 140%;
     line-height: 1.8;
-    color: #000000;
+    color: #FFFFFF;
     padding: 0.625rem;
     text-align: center;
-    background-color: #3dd1ce;
-    margin: 0;
+    background-color: #FF3333;
 }
 
 h2 {
@@ -42,14 +40,7 @@ h2, p {
 
 nav ul {
     display: block;
-    background-color: #759DC2;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    list-style: none;
+    background-color: orange;
 }
 nav ul li a {
     display: block;
@@ -63,13 +54,13 @@ header nav a {
 }
 
 nav li a:hover {
-    background-color: #3dd1ce;
-    color: #000000;
+    background-color: #FF3333;
+    color: #FFFFFF;
 }
 
 nav li a.active {
-    background-color: #3dd1ce;
-    color: #000000;
+    background-color: #FF3333;
+    color: #FFFFFF;
 }
 
 /*------------------------header---------------------------*/
@@ -84,7 +75,7 @@ header {
 /*---------------------------footer------------------------*/
 
 footer {
-    background-color: #3dd1ce;
+    background-color: #FF3333;
     padding: 1.25rem;
     bottom: 0;
     right: 0;
@@ -101,13 +92,13 @@ body {
 }
 
 footer>p {
-    color: #000000;
+    color: #FFFFFF;
     text-align: left;
 }
 
 aside ul li {
     color: #555555;
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding: 1.25rem;
     margin-bottom: 0.625rem;
     border: 0.3rem solid #555555;
@@ -115,6 +106,21 @@ aside ul li {
     text-align: center;
 }
 
+aside h2 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+aside ul li a:hover {
+    background-color: #FF3333;
+    color: #FFFFFF;
+}
+
+aside ul li a {
+    overflow: hidden;
+    white-space: nowrap;
+}
 
 article section img {
     display: block;
@@ -135,78 +141,63 @@ section {
     margin-top: 0.5rem;
 }
 
-embed {
-    width: 595pt;
-    height: 842pt;
-    display: block;
-    margin: auto;
+/* ----------------------------form------------------------------- */
+
+form {
+    width: 95%;
+    margin: 1rem auto auto;
 }
 
-img {
-    display: block;
-    margin: auto;
+label {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 0.3rem 0 0.3rem 0;
+    font-weight: bold;
 }
 
-video {
-    display: block;
-    margin:  25px auto;
-    width: 500px;
-    height: auto;
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=number],
+textarea {
+    width: 100%;
+    border: 0.1rem solid #555555;
+    border-radius: 0.2rem;
+    padding: 0.125rem;
+    margin: 0.25rem 0 0 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
 }
 
-/*------------------------links social media---------------------------*/
-
-.fa {
-    padding: 50px;
-    font-size: 50px !important;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
+input:invalid {
+    border: 0.1rem solid #FF3333;
 }
 
-.fa:hover {
-    opacity: 0.7;
+input:valid {
+    border: 0.1rem solid #008000;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+input[type=submit] {
+    margin-top: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 4rem;
+    border: 0.1rem solid #555555;
+    border-radius: 0.2rem;
 }
 
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
+input[type=submit]:hover {
+    background-color: #FF3333;
+    color: #FFFFFF;
 }
 
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
+/*-----------------------------address---------------------------*/
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
+address a {
+    color: #FFFFFF;
 }
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.fa-skype {
-    background: #00aff0;
-    color: white;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-    grid-gap: 10px;
-    padding: 10px;
-}
-
 
 @media all and (min-width: 38rem)  /* 608px */
 {
@@ -248,10 +239,6 @@ video {
         text-align: left;
     }
 
-    video {
-        width: 608px;
-    }
-
 }
 
 @media all and (min-width: 48rem) /* 768px */
@@ -287,8 +274,25 @@ video {
         padding-bottom: 1rem;
     }
 
-    video {
-        width: 768px;
+    /* --------------------------form--------------------------- */
+
+    form {
+        max-width: 35rem;
+        margin-left: 5rem;
+    }
+
+
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    textarea {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        height: 3rem;
+        margin-top: 1.25rem;
     }
 
 }
@@ -313,17 +317,12 @@ video {
         margin: 3.1rem;
     }
 
-    video {
-        width: 960px;
-    }
-
 }
 
 @media all and (min-width: 76.5rem) /* 1150px */ {
 
-
-    video {
-        width: 1150px;
+    .contact {
+        background-image:url("../img/mailbackground.jpg");
     }
 
 }

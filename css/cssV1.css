@@ -207,6 +207,60 @@ video {
     padding: 10px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #eee;
+}
+.container {
+    margin: 20px auto;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.container .boxS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#197dba;
+    padding:20px;
+    border-radius:10px;
+}
+
+.container .boxW {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ef9533;
+    padding:20px;
+    border-radius:10px;
+}
+
+.container .boxO {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#48bc48;
+    padding:20px;
+    border-radius:10px;
+}
+
+.container .boxT {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#e53535;
+    padding:20px;
+    border-radius:10px;
+}
+
 
 @media all and (min-width: 38rem)  /* 608px */
 {

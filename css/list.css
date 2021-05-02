@@ -7,12 +7,6 @@ ol.gradient-list > li, ol.gradient-list > li::before {
     box-sizing: border-box;
 }
 
-body {
-    background-color: #fafafa;
-    color: #1d1f20;
-    font-family: 'Raleway', sans-serif;
-}
-
 ol.gradient-list {
     counter-reset: gradient-counter;
     list-style: none;

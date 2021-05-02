@@ -1,0 +1,39 @@
+h3 {
+    margin: 10px 0;
+}
+
+h6 {
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.card-container {
+    background-color: #525659;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.75);
+
+    color: #fff;
+    margin: 20px auto 50px;
+    padding-top: 30px;
+    width: auto;
+    max-width: 75%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+.card-container .round {
+    border: 1px solid #03BFCB;
+    border-radius: 50%;
+    padding: 7px;
+    max-width: 20%;
+    height: auto;
+}
+

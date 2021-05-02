@@ -11,7 +11,7 @@
     text-transform: uppercase;
 }
 
-.btn {
+.fancy_button {
     width: 595pt;
     background-color: #3dd1ce;
     text-decoration: none;
@@ -20,11 +20,11 @@
     overflow: hidden;
 }
 
-.btn:hover {
+.fancy_button:hover {
     box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
 }
 
-.btn:before {
+.fancy_button:before {
     content: "";
     position: absolute;
     top: 0;
@@ -40,6 +40,6 @@
     transition: all 650ms;
 }
 
-.btn:hover:before {
+.fancy_button:hover:before {
     left: 100%;
 }
